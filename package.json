@@ -30,6 +30,8 @@
     "solcjs",
     "soljson.js",
     "translate.js",
+    "downloadCurrentVersion.js",
+    "verifyVersion.js",
     "wrapper.js"
   ],
   "author": "chriseth",
