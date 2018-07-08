@@ -23,7 +23,7 @@ function setupMethods (soljson) {
     var wrapCallback = function (callback) {
       assert(typeof callback === 'function', 'Invalid callback specified.');
       return function (path, contents, error) {
-        var result = callback(soljson.Pointer_stringify(path), contents);
+        var result = callback(soljson.Pointer_stringify(path), contents, error);
         if (typeof result.contents === 'string') {
           copyString(result.contents, contents);
         }
